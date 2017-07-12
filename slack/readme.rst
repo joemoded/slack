@@ -40,12 +40,20 @@ Install slackeventsapi::
 
 
 **Run SF Giants Bot**
-In order to run this locally, I have included the bot tokens in the tokens.ini file for each bot.
+In order to run this locally, you will need to recreate the sf_giants_app bot token, which can be done at
+https://sf-giants-team.slack.com/services/B67EZL153.
 
 In command line virtualenv, run the following::
 
-    export BOT_TOKEN='xoxb-210743843584-bLvGNkpMtMeOdePDk3G7n7Nh'
+    export BOT_TOKEN='XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
     export BOT_NAME='sf-giants'
+
+Grab the BOT_ID by running::
+
+    python get_rtm_bot_id.py
+
+Once you have the bot id, export it to your virtualenv using command line::
+
     export BOT_ID='U66MVQTH6'
 
 Start bot::
@@ -63,10 +71,12 @@ The bot will also take incorrect inputs and let the user know that they didn't r
 
 **Run Channel Events bot**
 If you don't already have your virtualenv set up, go back to setup instructions.  Once your virtualenv is running,
-export the tokens in command line to run the bot locally::
+generate and export the tokens in command line to run the bot locally.  Tokens can be found at:
+https://api.slack.com/apps/A66MRBS3A/general
+https://api.slack.com/apps/A66MRBS3A/oauth ::
 
-    export CLIENT_VERIFICATION_TOKEN='FmJX27voE84OhCpp5jKCZk48'
-    export SLACK_BOT_TOKEN='xoxb-211407425618-VufyooaOosqIhwCokf5a04jo'
+    export CLIENT_VERIFICATION_TOKEN='XXXXXXXXXXXXXXXXXXX'
+    export SLACK_BOT_TOKEN='XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
 
 Start bot::
 
