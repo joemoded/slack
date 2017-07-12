@@ -72,8 +72,8 @@ The bot will also take incorrect inputs and let the user know that they didn't r
 **Run Channel Events bot**
 If you don't already have your virtualenv set up, go back to setup instructions.  Once your virtualenv is running,
 generate and export the tokens in command line to run the bot locally.  Tokens can be found at:
-https://api.slack.com/apps/A66MRBS3A/general
-https://api.slack.com/apps/A66MRBS3A/oauth ::
+`Client token https://api.slack.com/apps/A66MRBS3A/general`
+`Slack bot token https://api.slack.com/apps/A66MRBS3A/oauth`
 
     export CLIENT_VERIFICATION_TOKEN='XXXXXXXXXXXXXXXXXXX'
     export SLACK_BOT_TOKEN='XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
